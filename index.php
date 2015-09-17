@@ -30,49 +30,49 @@
 // ksort($prices);
 
 
-
-$userList = array("Adam"=>0, 
-
-"Peter"=> 0, 
-
-"Stewie"=>0, 
-
-"Meg"=>0, 
-
-"Joe"=>0, 
-
-"Bonny"=>0, 
-
-"Quacmire"=>0, 
-
-"Bryan"=>0, 
-
-"Tom"=>0, 
-
-"Cleveland"=>0, 
-
-);
-
-foreach ($userList as $key => $value) {
-	
-	$key = $value = genPass();
-}
-
-print_r($userList);
-
-
-
-function genPass(){
- $password = array();
- 
- for($i = 0; $i < 7; $i++)
- {
- 	$password[$i] = chr(rand(65, 90));
- }
- 
- $password[rand(0, count($password))] = rand(0, 9);
- 
- <?php 
+// 
+// $userList = array("Adam"=>0, 
+// 
+// "Peter"=> 0, 
+// 
+// "Stewie"=>0, 
+// 
+// "Meg"=>0, 
+// 
+// "Joe"=>0, 
+// 
+// "Bonny"=>0, 
+// 
+// "Quacmire"=>0, 
+// 
+// "Bryan"=>0, 
+// 
+// "Tom"=>0, 
+// 
+// "Cleveland"=>0, 
+// 
+// );
+// 
+// foreach ($userList as $key => $value) {
+// 	
+	// $key = $value = genPass();
+// }
+// 
+// print_r($userList);
+// 
+// 
+// 
+// function genPass(){
+ // $password = array();
+//  
+ // for($i = 0; $i < 7; $i++)
+ // {
+ 	// $password[$i] = chr(rand(65, 90));
+ // }
+//  
+ // $password[rand(0, count($password))] = rand(0, 9);
+//  
+ // <?php 
 
 // $prices = array();
 // $prices = array(550, 200, 600);
@@ -102,56 +102,57 @@ function genPass(){
 // 
 // asort($prices);
 // ksort($prices);
+// 
+// 
+// 
+// $userList = array("Adam"=>0, 
+// 
+// "Peter"=> 0, 
+// 
+// "Stewie"=>0, 
+// 
+// "Meg"=>0, 
+// 
+// "Joe"=>0, 
+// 
+// "Bonny"=>0, 
+// 
+// "Quacmire"=>0, 
+// 
+// "Bryan"=>0, 
+// 
+// "Tom"=>0, 
+// 
+// "Cleveland"=>0, 
+// 
+// );
+// 
+// foreach ($userList as $key => $value) {
+// 	
+	// $key = $value = genPass();
+// }
+// 
+// print_r($userList);
+// 
+// 
+// 
+// function genPass(){
+ // $password = array();
+//  
+ // for($i = 0; $i < 7; $i++)
+ // {
+ 	// $password[$i] = chr(rand(65, 90));
+ // }
+//  
+ // $password[rand(0, count($password))] = rand(0, 9);
+//  
+ // return $password;
+// }
+//  
+//  
+//  
+//  
 
-
-
-$userList = array("Adam"=>0, 
-
-"Peter"=> 0, 
-
-"Stewie"=>0, 
-
-"Meg"=>0, 
-
-"Joe"=>0, 
-
-"Bonny"=>0, 
-
-"Quacmire"=>0, 
-
-"Bryan"=>0, 
-
-"Tom"=>0, 
-
-"Cleveland"=>0, 
-
-);
-
-foreach ($userList as $key => $value) {
-	
-	$key = $value = genPass();
-}
-
-print_r($userList);
-
-
-
-function genPass(){
- $password = array();
- 
- for($i = 0; $i < 7; $i++)
- {
- 	$password[$i] = chr(rand(65, 90));
- }
- 
- $password[rand(0, count($password))] = rand(0, 9);
- 
- return $password;
-}
- 
- 
- 
- 
 ?>
 }
  
