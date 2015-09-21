@@ -3,7 +3,7 @@ $deck = array();
 for ($i = 0; $i < 52; $i++){
 	$deck[] = $i;
 }
-shuffle($deck);
+
 echo "<br ?>";
 echo "<br ?>";
 $suitArray = array("clubs", "diamonds", "hearts", "spades");
@@ -22,15 +22,27 @@ $suitArray = array("clubs", "diamonds", "hearts", "spades");
                     "12.png" => 12, 
                     "13.png" => 13,);
 
- 
+shuffle($deck);
+ $sum = array();
 for($i = 0; $i < 4; $i++){
-	$sum = 0;
+$sum[$i] = 0;
 	for ($j = 0; $j < rand(4, 6); $j++){
-		echo "<img src ='cards/" . $suitArray[floor(array_pop($deck)/13)] . "/" . (array_pop($deck) % 13 + 1) . ".png' / >";	
-		$sum = $sum + $theCardValues[(array_pop($deck) % 13 + 1) . ".png"];
+		echo "<img src ='cards/" . $suitArray[floor(array_pop($deck)/13)] . "/" . (array_pop($deck) % 13 + 1) . ".png' / >";		
+		$sum[$i] = $sum[$i] + $theCardValues[(array_pop($deck) % 13 + 1) . ".png"];
 	}
-	echo $sum;
+	echo $sum[$i] . " ";
+	
+	if ($sum[$i] == 42){	
+		echo "YOU WIN! ";	
+	}
+	
 echo "<br />";
 }
 
+for ($i = 3; $i > 0; $i--){
+	$temp = $sum[$i];
+	if ($sum[$i] > $sum[$i-1] && $sum[$i] < 42){
+		$temp = $sum[$i];	
+	}
+}
 ?>
